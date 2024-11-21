@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&display=swap" rel="stylesheet">
+    <title>Solar Systemic Calendar</title>
+</head>
+<body>
+    <script src="script.js"></script>
+    <script src="script2.js"></script>
+
+    <header>
+        <h1><u>Solar Systemic Time</u></h1>
+        <p>The Solar Systemic Time (SST) is a time calculator across the solar system, aiming to give users a hint of time from planets, moons, and asteroids.
+        </p>
+        <h3>Input accurate time to calculate the systemic time for different planets and moons.</h3>
+    </header>
+
+    <hr><br>
+
+    <main>
+        <div>
+            <label for="date_pick">Enter the date: </label>
+            <input type="date" id="date_pick">
+            <br>
+            <label for="time1">Enter the time: </label>
+            <input type="time" id="time1">
+            <br><br>
+        </div>
+        <div>
+            <label for="planet">Select a planet/asteroid: </label>
+            <select id="planet">
+                <option value="Earth">Earth</option>
+                <option value="Mars">Mars</option>
+                <option value="Mercury">Mercury</option>
+                <option value="Venus">Venus</option>
+                <option value="Jupiter">Jupiter</option>
+                <option value="Saturn">Saturn</option>
+                <option value="Uranus">Uranus</option>
+                <option value="Neptune">Neptune</option>
+
+                <option value="Bunnu">Bunnu</option>
+                <option value="Ceres">Ceres</option>
+                <option value="Vesta">Vesta</option>
+                <option value="Pallas">Pallas</option>
+                <option value="Eros">Eros</option>
+                <option value="Itokawa">Itokawa</option>
+                <option value="Gaspra">Gaspra</option>
+                <option value="Ida">Ida</option>
+                <option value="Ryugu">Ryugu</option>
+                <option value="Psyche">Psyche</option>
+            </select>
+            <br>
+            <label for="moons">Select a moon (if applicable): </label>
+            <select id="earth_moon">
+                <option value="The_Moon">The Moon</option>
+                <option value="None">None</option>
+            </select>
+            <select id="mars_moon" hidden>
+                <option value="Deimos">Deimos</option>
+                <option value="Phobos">Phobos</option>
+                <option value="None">None</option>
+            </select>
+            <select id="jup_moon" hidden>
+                <option value="Ganymede">Ganymede</option>
+                <option value="Callisto">Callisto</option>
+                <option value="Io">Io</option>
+                <option value="Europa">Europa</option>
+                <option value="Carme">Carme</option>
+                <option value="Kallichore">Kallichore</option>
+                <option value="Amalthea">Amalthea</option>
+                <option value="None">None</option>
+            </select>
+            <select id="sat_moon" hidden>
+                <option value="Titan">Titan</option>
+                <option value="Hyperion">Hyperion</option>
+                <option value="Mimas">Mimas</option>
+                <option value="Dione">Dione</option>
+                <option value="Rhea">Rhea</option>
+                <option value="Enceladus">Enceladus</option>
+                <option value="Lapetus">Lapetus</option>
+                <option value="None">None</option>
+            </select>
+        </div>
+        <button id="submit">Submit</button>
+        <div id="result"></div>
+    </main>
+
+    <div class="dedication">
+        <p>Dedicated to:</p>
+        <a href="https://www.nasahunch.com" target="_blank" title="Visit NASA HUNCH website">
+            <img src="hunch.png" alt="NASA HUNCH Logo" class="dedicated-logo">
+        </a>
+    </div>    
+
+    <p>Made by: Xavier Perez</p>
+    <p>Passaic County Technical Institute</p>
+    <p>251422@pcti.mobi</p>
+</body>
+</html>
